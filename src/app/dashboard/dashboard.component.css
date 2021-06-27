@@ -1,0 +1,21 @@
+.example-section {
+    position: relative;
+    left: 20px;
+    margin: 12px 0;
+}
+
+.cart {
+    box-shadow: 4px;
+}
+
+input {
+    width: 15%;
+}
+
+button {
+    color: green;
+}
+
+.example-form-field {
+    width: 200px;
+}

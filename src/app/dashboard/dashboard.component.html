@@ -1,0 +1,30 @@
+<h1> <i>Item List</i> </h1>
+
+<section class="example-section">
+    <h4>Select your items:</h4>
+
+    <mat-checkbox style="font-weight: 500;">items <em style="font-weight: 500;">Prices</em></mat-checkbox>
+    <p *ngFor=" let item of itemsList">
+
+
+        <mat-checkbox (click)="getPrice(item.price, item.status)" [(ngModel)]="item.status">{{item.name}} <em>{{item.price}}</em></mat-checkbox>
+
+    </p>
+
+</section>
+
+<section class="example-section">
+    <h5>You chose:</h5>
+
+</section>
+
+
+<div class="container">
+
+    <h4>Subtotal : {{subtotal}}</h4>
+    <h6></h6>
+
+    <input matInput type="number" [(ngModel)]="tip" (keyup)="tipPer(tip)" placeholder="enter your tip">
+    <h5>Total: {{total}}</h5>
+    <button type="button" class="btn btn-success">checkout</button>
+</div>
