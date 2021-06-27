@@ -14,12 +14,12 @@ export class DashboardComponent {
       {name:"Pizza",price:120, status:false},
       {name:"Cheese",price:180, status:false},
       {name:"Mushroom",price:240, status:false},
-      {name:"Mushroom",price:240, status:false},
-      {name:"Mushroom",price:240, status:false},
+      {name:"Ice Cream",price:320, status:false},
+      {name:"Tomato Soup",price:80, status:false},
   ];
    
     subtotal=0;
-    tip=0;
+    tip=0 ;
 
     total=0;
 
@@ -38,7 +38,7 @@ getPrice(price,status){
       this.subtotal-=price;
     }
  
-  console.log(status) ;
+  
 }
 
 tipPer(tip){
